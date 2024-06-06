@@ -1,0 +1,228 @@
+/* 1. Анимированная кнопка */
+button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #46a049;
+  }
+  
+  /* 2. Адаптивный макет с помощью CSS Grid */
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1em;
+  }
+  
+  /* 3. Стилизация формы ввода данных */
+  input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #46a049;
+  }
+  
+  /* 4. Анимированное меню навигации */
+  .navbar {
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  .navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .navbar a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  /* 5. Селекторы */
+  p {
+    color: blue; 
+  }
+  
+  .example-class {
+    font-size: 20px; 
+  }
+  
+  #example-id {
+    text-align: center;
+  }
+  
+  [data-role="button"] {
+    background-color: #ccc; 
+  }
+  
+  a:hover {
+    text-decoration: underline; 
+  }
+  
+  p::first-letter {
+    font-size: 30px; 
+  }
+  
+  /* 8. Анимированный слайдер изображений */
+  .slider {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+  }
+  
+  .slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: slide 10s infinite;
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  /* 9. Методы позиционирования */
+  .positioned-element {
+    position: relative;
+    left: 10px;
+    top: 10px;
+  }
+  
+  .absolute-element {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .fixed-element {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+  }
+  
+  /* 10. Адаптивный макет с помощью медиа-запросов */
+  @media screen and (max-width: 768px) {
+    .container {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  /* 11. Анимации с помощью CSS */
+  .animated-element {
+    animation: myAnimation 2s infinite;
+  }
+  
+  @keyframes myAnimation {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(100px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  /* 12. Стилизованные карточки товаров */
+  .card {
+    width: 250px;
+    height: 350px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+  
+  .card h2 {
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    margin-bottom: 5px;
+  }
+  
+  /* 13. Единицы измерения */
+  .px-element {
+    width: 100px; 
+  }
+  
+  .em-element {
+    font-size: 1.5em;
+  }
+  
+  .rem-element {
+    font-size: 1.2rem; 
+  }
+  
+  /* 14. Анимированная загрузка страницы */
+  .loading {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 5px solid #ccc;
+    border-top-color: #4CAF50;
+    animation: spin 2s linear infinite;
+    margin: 100px auto;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* 15. Тени и эффекты */
+  .shadow-element {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .text-shadow-element {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .filter-element {
+    filter: blur(5px);
+  }
